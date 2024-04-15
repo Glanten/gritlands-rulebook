@@ -1,5 +1,8 @@
 /* default stylesheet for rulebook */
 
+/* hidden elements (for compatibility with certain/older browsers */
+.hide { display: none; visibility: hidden; }
+
 /* sidenav menu */
 .sidenav {
     height: 100%;
@@ -37,18 +40,33 @@
     font-size: 36px;
     margin-left: 50px;
 }
-  
-/* style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-  
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
 
-/* hidden elements (for compatibility with certain/older browsers */
-.hide { display: none; visibility: hidden; }
+#topnavbar {
+    background-color: #111;
+    position: fixed; /* stuck in position */
+    top: 0; /* stuck to top of page */
+    left: 0;
+    width: 100%;
+    transition: top 0.3s; /* time to appear/disappear */
+}
+
+#topnavbar a, span{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#topnavbar a:hover, span:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}

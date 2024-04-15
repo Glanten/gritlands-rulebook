@@ -9,3 +9,15 @@ function closeNav() {
     document.getElementById("sidenavmenu").style.width = "0";
     document.body.style.backgroundColor = "white";
 }
+
+/* when the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.scrollY; /* was window.pageYOffset but that is deprecated*/
+window.onscroll = function() {
+  var currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("topnavbar").style.top = "0";
+  } else {
+    document.getElementById("topnavbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
