@@ -2,29 +2,43 @@
 <html lang="en-GB">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Gritlands Rulebook</title>
-    <!--
-  <link rel="stylesheet" href="style.css" />
+  <title>Gritlands Rulebook</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="static\default_style.css" />
+  <!--
   <link rel="icon" href="logo.svg" />
   <link rel="manifest" href="manifest.json" />
   -->
 </head>
 
 <body>
-    <!-- Register the WPA service worker
+  <!-- Register the WPA service worker
   <script>
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("sw.js");
     }
   </script>
    -->
-    <!-- <script src="app.js" defer></script> -->
 
+  <div id="sidenavmenu" class="sidenav">
+    <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+  </div>
+
+  <div id="main">
     <h1>Heading 1</h1>
 
     <div>
-        <p>Hello, world!</p>
+      <p>Hello, world!</p>
+      <button onclick="openNav()">open</button>
     </div>
+
+    <div class="hide">
+      <script src="static/layout.js"></script>
+    </div>
+  </div>
 </body>

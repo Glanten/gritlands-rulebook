@@ -1,0 +1,54 @@
+/* default stylesheet for rulebook */
+
+/* sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 0; /* this opens with the JavaScript openNav() function */
+    position: fixed; /* stays in place */
+    z-index: 1; /* lies above other layers */
+    top: 0; /* stay at the top of the page */
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /* disable horizontal scroll */
+    padding-top: 60px; /* place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* change navigation links color on mouse-over (web only) */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+/* position and style the sidenav menu close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+/* style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* hidden elements (for compatibility with certain/older browsers */
+.hide { display: none; visibility: hidden; }
