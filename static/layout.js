@@ -10,8 +10,8 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 
-/* when the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.scrollY; /* was window.pageYOffset but that is deprecated*/
+/* when the user scrolls down, hide the navbar; when the user scrolls up, show the navbar */
+var prevScrollpos = window.scrollY; /* was window.pageYOffset but that is deprecated */
 window.onscroll = function() {
   var currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
