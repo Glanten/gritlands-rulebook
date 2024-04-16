@@ -1,8 +1,13 @@
 /* default stylesheet for rulebook */
 
+#main {
+    padding-top: 20px;
+}
+
 /* hidden elements (for compatibility with certain/older browsers */
 .hide { display: none; visibility: hidden; }
 
+/* SIDE NAVIGATION MENU */
 /* sidenav menu */
 .sidenav {
     height: 100%;
@@ -47,6 +52,7 @@
     .sidenav a {font-size: 18px;}
 }
 
+/* +++ TOP NAVIGATION BAR +++ */
 #topnavbar {
     background-color: #111;
     position: fixed; /* stuck in position */
@@ -69,4 +75,8 @@
     background-color: #ddd;
     color: black;
     cursor: pointer;
+}
+
+#appsettings {
+    float: right;
 }
