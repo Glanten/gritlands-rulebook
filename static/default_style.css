@@ -62,7 +62,7 @@
     transition: top 0.3s; /* time to appear/disappear */
 }
 
-#topnavbar a, span, p{
+#topnavbar a, span{
     float: left;
     display: flex;
     color: white;
@@ -81,10 +81,15 @@
     float: right;
 }
 
+
 #pagetitle {
-    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 5px;
 }
+
 
 #pagesubtitle {
     color: grey;
+    padding-left: 5px;
 }
