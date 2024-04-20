@@ -86,13 +86,11 @@ html {
     float: right;
 }
 
-
 #pagetitle {
     font-weight: bold;
     padding-left: 10px;
     padding-right: 5px;
 }
-
 
 #pagesubtitle {
     color: lightgray;
