@@ -1,7 +1,12 @@
 /* default stylesheet for rulebook */
 
-#main {
-    padding-top: 20px;
+html {
+    font-family: sans-serif;
+}
+
+#maincontent {
+    padding-top: 30px;
+    padding-left: 10px;
 }
 
 /* hidden elements (for compatibility with certain/older browsers */
@@ -26,7 +31,7 @@
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -90,6 +95,6 @@
 
 
 #pagesubtitle {
-    color: grey;
+    color: lightgray;
     padding-left: 5px;
 }

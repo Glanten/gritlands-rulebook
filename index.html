@@ -5,6 +5,7 @@
   <title>Gritlands Rulebook</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
   <link rel="stylesheet" href="static\default_style.css" />
   <!--
   <link rel="icon" href="logo.svg" />
@@ -22,31 +23,30 @@
    -->
 
   <div id="sidenavmenu" class="sidenav">
-    <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
-    <a href="#">LINK</a>
-    <a href="#">LINK</a>
-    <a href="#">LINK</a>
-    <a href="#">LINK</a>
+    <a href="javascript:void(0)" class="closebutton" onclick="closeNav()"><img src="static/images/close_white_24dp.svg"
+        alt="close menu" width="20" height="20" /></a>
+    <!-- NAVBAR POPULATED BY JAVASCRIPT -->
   </div>
 
   <div id="topnavbar">
-    <a onclick="openNav()" id="menudots">MENU</a>
-    <span id="pagetitle">Gritlands Rulebook</span>
-    <span id="pagesubtitle">Index</span>
+    <a onclick="openNav()" id="menudots"><img src="static/images/menu_white_24dp.svg" alt="menu" width="20"
+        height="20" /></a>
+    <span id="pagetitle">GRITLANDS</span>
+    <span id="pagesubtitle"></span>
     <div id="appsettings">
-      <a href="#">SETTINGS</a>
+      <a href="#"><img src="static/images/settings_white_24dp.svg" alt="settings" width="20" height="20" /></a>
     </div>
   </div>
 
-  <div id="main">
+  <div id="maincontent">
     <h1>Heading 1</h1>
 
     <div>
       <p>Text goes here</p>
     </div>
+  </div>
 
-    <div class="hide">
-      <script src="static/layout.js"></script>
-    </div>
+  <div class="hide">
+    <script src="static/layout.js"></script>
   </div>
 </body>
