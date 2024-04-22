@@ -26,12 +26,16 @@ window.onscroll = function() {
 // get list of links from side navbar
 document.addEventListener('DOMContentLoaded', function() {
   const links = [
-    { id: 'homepage', text: 'Home', url: 'static/pagecontent/home.html' },
+    { id: 'homepage', text: 'Introduction', url: 'static/pagecontent/home.html' },
+    { id: 'characters', text: 'Characters', url: 'static/pagecontent/characters.html' },
     { id: 'clans', text: 'Clans', url: 'static/pagecontent/clans.html' },
     { id: 'archetypes', text: 'Archetypes', url: 'static/pagecontent/archetypes.html' },
-    { id: 'grit', text: 'Grit', url: 'static/pagecontent/grit.html' },
+    { id: 'grit', text: 'GRIT', url: 'static/pagecontent/grit.html' },
+    { id: 'health', text: 'Health', url: 'static/pagecontent/health.html' },
+    { id: 'equipment', text: 'Equipment', url: 'static/pagecontent/equipment.html' },
     { id: 'consequences', text: 'Consequences', url: 'static/pagecontent/consequences.html' },
     { id: 'hotzones', text: 'Hotzones', url: 'static/pagecontent/hotzones.html' },
+    { id: 'disclaimers', text: 'Disclaimers', url: 'static/pagecontent/disclaimers.html' },
   ];
 
   // Populate the sidebar with links

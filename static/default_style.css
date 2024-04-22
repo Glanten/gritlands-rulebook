@@ -67,7 +67,7 @@ html {
     transition: top 0.3s; /* time to appear/disappear */
 }
 
-#topnavbar a, span{
+#topnavbar a, #topnavbar span{
     float: left;
     display: flex;
     color: white;
@@ -88,11 +88,20 @@ html {
 
 #pagetitle {
     font-weight: bold;
-    padding-left: 10px;
-    padding-right: 5px;
 }
 
 #pagesubtitle {
     color: lightgray;
-    padding-left: 5px;
+}
+
+table, th, td {
+    font-size: smaller;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    background-color: black;
+    color: white;
 }
