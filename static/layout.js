@@ -33,8 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
     { id: 'grit', text: 'GRIT', url: 'static/pagecontent/grit.html' },
     { id: 'health', text: 'Health', url: 'static/pagecontent/health.html' },
     { id: 'equipment', text: 'Equipment', url: 'static/pagecontent/equipment.html' },
-    { id: 'consequences', text: 'Consequences', url: 'static/pagecontent/consequences.html' },
+    { id: 'armour', text: 'Armour', url: 'static/pagecontent/armour.html' },
+    { id: 'tasks', text: 'Tasks', url: 'static/pagecontent/tasks.html' },
+    { id: 'tags', text: 'Tags', url: 'static/pagecontent/tags.html' },
     { id: 'hotzones', text: 'Hotzones', url: 'static/pagecontent/hotzones.html' },
+    { id: 'chargen', text: 'Character Creation', url: 'static/pagecontent/chargen.html' },
+    { id: 'consequences', text: 'Consequences', url: 'static/pagecontent/consequences.html' },
     { id: 'disclaimers', text: 'Disclaimers', url: 'static/pagecontent/disclaimers.html' },
   ];
 
