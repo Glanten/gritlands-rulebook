@@ -25,6 +25,7 @@ window.onscroll = function() {
 
 // get list of links from side navbar
 document.addEventListener('DOMContentLoaded', function() {
+
   const links = [
     { id: 'homepage', text: 'Introduction', url: 'static/pagecontent/home.html' },
     { id: 'characters', text: 'Characters', url: 'static/pagecontent/characters.html' },
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     { id: 'armour', text: 'Armour', url: 'static/pagecontent/armour.html' },
     { id: 'tasks', text: 'Tasks', url: 'static/pagecontent/tasks.html' },
     { id: 'tags', text: 'Tags', url: 'static/pagecontent/tags.html' },
-    { id: 'hotzones', text: 'Hotzones', url: 'static/pagecontent/hotzones.html' },
+    { id: 'hotzones', text: 'HOTZONES', url: 'static/pagecontent/hotzones.html' },
     { id: 'chargen', text: 'Character Creation', url: 'static/pagecontent/chargen.html' },
     { id: 'consequences', text: 'Consequences', url: 'static/pagecontent/consequences.html' },
     { id: 'disclaimers', text: 'Disclaimers', url: 'static/pagecontent/disclaimers.html' },
