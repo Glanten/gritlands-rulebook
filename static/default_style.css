@@ -138,3 +138,7 @@ th {
 #surveyor_content, #scavenger_content, #quaestor_content, #illuminator_content {
     display: none;
 }
+
+.class_skills {
+    width: 100%;
+}
