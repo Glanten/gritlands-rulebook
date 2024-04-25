@@ -1,13 +1,25 @@
-  /* open the sidenav menu to 250px */
-  function openNav() {
-    document.getElementById("sidenavmenu").style.width = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  }
+// open the sidenav menu (to 250px)
+function openNav() {
+  document.getElementById("sidenavmenu").style.width = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
 
-  function closeNav() {
-    document.getElementById("sidenavmenu").style.width = "0";
-    document.body.style.backgroundColor = "white";
+// close the sidenav menu
+function closeNav() {
+  document.getElementById("sidenavmenu").style.width = "0";
+  document.body.style.backgroundColor = "white";
+}
+
+// open or close a named section (it should start closed)
+function collapseSegment(segmentId) {
+  let element = document.getElementById(segmentId);
+  if (element.style.display === "block") {
+      element.style.display = "none";
+  } else {
+      element.style.display = "block";
   }
+}
+
 
 /* when the user scrolls down, hide the navbar; when the user scrolls up, show the navbar */
 var prevScrollpos = window.scrollY; /* was window.pageYOffset but that is deprecated */

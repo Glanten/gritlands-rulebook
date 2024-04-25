@@ -120,3 +120,21 @@ th {
     border: none;
     border-left: 1px solid black;
 }
+
+#enabler, #engineer, #oddball, #scientist, #scout, #warrior {
+    text-indent: 1em;
+}
+
+.archetype_toggle a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#surveyor_content, #scavenger_content, #quaestor_content, #illuminator_content {
+    display: none;
+}
