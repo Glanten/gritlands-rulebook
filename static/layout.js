@@ -23,7 +23,9 @@ function collapseSegment(segmentId, iconId) {
   }
 }
 
-function archetypeSegment(segment, url) {
+function archetypeSegment(segment, url, segmentName) {
+  let currentSegment = document.getElementById(segment).subclass;
+  let newSegment = segmentName;
   fetch(url)
     .then(response => {
       if (!response.ok) {
@@ -33,6 +35,8 @@ function archetypeSegment(segment, url) {
     })
     .then(text => {
       // swap between clan wah and generic wah
+
+      document.getElementById(segment).subclass = newSegment;
 
       // display fetched content in the archetype flavour text div
       document.getElementById(segment).innerHTML = text;
