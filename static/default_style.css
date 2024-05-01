@@ -100,6 +100,10 @@ table, th, td {
     border-collapse: collapse;
 }
 
+.full_width {
+    width: 100%;
+}
+
 th {
     text-align: left;
     background-color: black;
@@ -125,7 +129,7 @@ th {
     text-indent: 1em;
 }
 
-.archetype_toggle a {
+.archetype_toggle a, .collapsible {
     display: block;
     text-decoration: none;
     color: white;
@@ -133,6 +137,10 @@ th {
     padding: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.chargen_content {
+    display: none;
 }
 
 #surveyor_content, #scavenger_content, #quaestor_content, #illuminator_content {
@@ -157,4 +165,8 @@ th {
     height: 40px;
     padding-left: 1em;
     padding-right: 1em;
+}
+
+.float_right {
+    float: right;
 }

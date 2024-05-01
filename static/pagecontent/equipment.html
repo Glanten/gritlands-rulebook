@@ -25,7 +25,7 @@
     <p>
 </div>
 <div>
-    <table>
+    <table class="full_width">
         <tr>
             <th>Item</th>
             <th>Stuff or Thing?</th>
@@ -91,8 +91,11 @@
 </div>
 <hr />
 
-<h2>Character Creation</h2>
-<div class="chargen_content">
+<h2 onclick="collapseSegment('chargen001', 'equip_expand')" class="collapsible">
+    Character Creation
+    <img class="float_right" id="equip_expand" alt="more/less" src="static\images\expand_more_white.svg" />
+</h2>
+<div class="chargen_content" id="chargen001">
     <p>
         In addition to their costume (which may or may not count as War Paint, or 'Eavy Metal if they have those skills)
         characters can have the following <strong>STUFF</strong>:

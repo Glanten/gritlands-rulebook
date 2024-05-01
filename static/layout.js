@@ -11,15 +11,36 @@ function closeNav() {
 }
 
 // open or close a named section (it should start closed)
-function collapseSegment(segmentId) {
+function collapseSegment(segmentId, iconId) {
   let element = document.getElementById(segmentId);
+  let icon = document.getElementById(iconId);
   if (element.style.display === "block") {
       element.style.display = "none";
+      icon.src = "static\\images\\expand_more_white.svg"
   } else {
       element.style.display = "block";
+      icon.src = "static\\images\\expand_less_white.svg";
   }
 }
 
+function archetypeSegment(segment, url) {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('No network response');
+      }
+      return response.text();
+    })
+    .then(text => {
+      // swap between clan wah and generic wah
+
+      // display fetched content in the archetype flavour text div
+      document.getElementById(segment).innerHTML = text;
+    })
+    .catch(error => {
+      console.error('ERROR:', error);
+    })
+}
 
 /* when the user scrolls down, hide the navbar; when the user scrolls up, show the navbar */
 var prevScrollpos = window.scrollY; /* was window.pageYOffset but that is deprecated */
@@ -76,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch(url)
       .then(response => {
         if (!response.ok) {
-          throw new Error('Not network response');
+          throw new Error('No network response');
         }
         return response.text();
       })
