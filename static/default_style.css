@@ -125,7 +125,7 @@ th {
     border-left: 1px solid black;
 }
 
-#enabler, #engineer, #oddball, #scientist, #scout, #warrior {
+#enabler_link, #engineer_link, #oddball_link, #scientist_link, #scout_link, #warrior_link {
     text-indent: 1em;
 }
 
