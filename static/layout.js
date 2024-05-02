@@ -12,8 +12,8 @@ function closeNav() {
 
 // open or close a named section (it should start closed)
 function collapseSegment(segmentId, iconId) {
-  let element = document.getElementById(segmentId);
-  let icon = document.getElementById(iconId);
+  var element = document.getElementById(segmentId);
+  var icon = document.getElementById(iconId);
   if (element.style.display === "block") {
       element.style.display = "none";
       icon.src = "static\\images\\expand_more_white.svg"
@@ -23,10 +23,14 @@ function collapseSegment(segmentId, iconId) {
   }
 }
 
-function archetypeSegment(segment, url, segmentName) {
-  let currentSegment = document.getElementById(segment).subclass;
-  let newSegment = segmentName;
-  fetch(url)
+function archetypeSegment(segment, url, buttonId) {
+  buttonOutline(buttonId);
+  var whichButton = document.getElementById(buttonId)
+  if (whichButton.style.border != "5px solid red") {
+    // get content from scout_default.html
+    var defaultContentSource = document.getElementById(segment).getAttribute("default_content");
+    // get the default archetype content
+    fetch(defaultContentSource)
     .then(response => {
       if (!response.ok) {
         throw new Error('No network response');
@@ -34,16 +38,44 @@ function archetypeSegment(segment, url, segmentName) {
       return response.text();
     })
     .then(text => {
-      // swap between clan wah and generic wah
-
-      document.getElementById(segment).subclass = newSegment;
-
-      // display fetched content in the archetype flavour text div
+      // inject default scout text
       document.getElementById(segment).innerHTML = text;
     })
     .catch(error => {
       console.error('ERROR:', error);
     })
+  } else {
+    fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('No network response');
+      }
+      return response.text();
+    })
+    .then(text => {
+      // display fetched content in the archetype description section
+      document.getElementById(segment).innerHTML = text;
+    })
+    .catch(error => {
+      console.error('ERROR:', error);
+    })
+  }  
+}
+
+function buttonOutline (buttonId) {
+  var button = document.getElementById(buttonId);
+  var buttons = document.getElementsByClassName('clan_archetype_button');
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].id === buttonId) {
+      if (button.style.border === "5px solid red") {
+        button.style.border = "5px solid transparent";
+      } else {
+        button.style.border = "5px solid red";
+      }
+    } else {
+      buttons[i].style.border = "5px solid transparent";
+    }
+  }
 }
 
 /* when the user scrolls down, hide the navbar; when the user scrolls up, show the navbar */
