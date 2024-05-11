@@ -27,7 +27,7 @@ function archetypeSegment(segment, url, buttonId) {
   buttonOutline(buttonId);
   var whichButton = document.getElementById(buttonId)
   if (whichButton.style.border != "5px solid red") {
-    // get content from scout_default.html
+    // define default archetype content
     var defaultContentSource = document.getElementById(segment).getAttribute("default_content");
     // get the default archetype content
     fetch(defaultContentSource)
@@ -38,7 +38,7 @@ function archetypeSegment(segment, url, buttonId) {
       return response.text();
     })
     .then(text => {
-      // inject default scout text
+      // inject default archetype text
       document.getElementById(segment).innerHTML = text;
     })
     .catch(error => {

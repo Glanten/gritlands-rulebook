@@ -166,3 +166,19 @@ th {
 .float_right {
     float: right;
 }
+
+#list_nugov {
+    list-style-image: url('images/nugov_tiny.gif');
+}
+
+#list_wastelanders {
+    list-style-image: url('images/wastelanders_tiny.gif');
+}
+
+#list_knights {
+    list-style-image: url('images/knights_tiny.gif');
+}
+
+#list_host {
+    list-style-image: url('images/host_tiny.gif');
+}
