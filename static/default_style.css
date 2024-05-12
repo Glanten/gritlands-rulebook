@@ -127,7 +127,7 @@ th {
     border-left: 1px solid black;
 }
 
-#enabler_link, #engineer_link, #oddball_link, #scientist_link, #scout_link, #warrior_link, #scout_skill, #carnage_skill {
+#enabler_link, #engineer_link, #oddball_link, #scientist_link, #scout_link, #warrior_link, #tradition, #scout_skill, #carnage_skill, #pharmacology_skill, #medic_skill, #engineer_skill, #and_chewing_gum, #assistant, #coordinator {
     text-indent: 1em;
 }
 
@@ -141,7 +141,7 @@ th {
     margin-bottom: 5px;
 }
 
-.chargen_content {
+.chargen_content, .tradition_content {
     display: none;
 }
 
