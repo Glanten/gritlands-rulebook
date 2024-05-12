@@ -15,7 +15,7 @@ html {
 /* SIDE NAVIGATION MENU */
 /* sidenav menu */
 .sidenav {
-    height: 100%;
+    height: calc(100% - 60px); /* ensure the navbar does not keep going off the bottom of the screen! */
     width: 0; /* this opens with the JavaScript openNav() function */
     position: fixed; /* stays in place */
     z-index: 1; /* lies above other layers */
@@ -23,6 +23,8 @@ html {
     left: 0;
     background-color: #111;
     overflow-x: hidden; /* disable horizontal scroll */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
     padding-top: 60px; /* place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
@@ -125,7 +127,7 @@ th {
     border-left: 1px solid black;
 }
 
-#enabler_link, #engineer_link, #oddball_link, #scientist_link, #scout_link, #warrior_link {
+#enabler_link, #engineer_link, #oddball_link, #scientist_link, #scout_link, #warrior_link, #scout_skill, #carnage_skill {
     text-indent: 1em;
 }
 
