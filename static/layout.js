@@ -28,7 +28,7 @@ function collapseSegment(segmentId, iconId) {
 function archetypeSegment(segment, url, buttonId) {
   buttonOutline(buttonId);
   var whichButton = document.getElementById(buttonId)
-  if (whichButton.style.border != "5px solid red") {
+  if (whichButton.style.border != "5px solid black") {
     // define default archetype content
     var defaultContentSource = document.getElementById(segment).getAttribute("default_content");
     // get the default archetype content
@@ -69,10 +69,11 @@ function buttonOutline (buttonId) {
   var buttons = document.getElementsByClassName('clan_archetype_button');
   for (var i = 0; i < buttons.length; i++) {
     if (buttons[i].id === buttonId) {
-      if (button.style.border === "5px solid red") {
-        button.style.border = "5px solid transparent";
+      if (button.style.border === "5px solid black") {
+        button.style.border = "5px solid transparent"
       } else {
-        button.style.border = "5px solid red";
+        button.style.border = "5px solid black";
+        button.style.borderRadius = "50%";
       }
     } else {
       buttons[i].style.border = "5px solid transparent";

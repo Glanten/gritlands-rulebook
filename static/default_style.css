@@ -127,7 +127,10 @@ th {
     border-left: 1px solid black;
 }
 
-#enabler_link, #engineer_link, #oddball_link, #scientist_link, #scout_link, #warrior_link, #tradition, #scout_skill, #carnage_skill, #pharmacology_skill, #medic_skill, #engineer_skill, #and_chewing_gum, #assistant, #coordinator {
+#enabler_link, #engineer_link, #oddball_link, #scientist_link, #scout_link, #warrior_link,
+#tradition, #scout_skill, #carnage_skill, #pharmacology_skill, #medic_skill, #engineer_skill,
+#and_chewing_gum, #assistant, #coordinator, #counselling, #d-fens, #first_aid, #never_say_die,
+#psychoanalysis, #reputation, #resistance, #second_wind, #teamwork, #thicker_than_water, #true_grit {
     text-indent: 1em;
 }
 
@@ -141,7 +144,7 @@ th {
     margin-bottom: 5px;
 }
 
-.chargen_content, .tradition_content {
+.chargen_content, .tradition_content, .design_notes {
     display: none;
 }
 
@@ -180,4 +183,9 @@ th {
 
 .clans_display span {
     font-size: larger;
+}
+
+.pink_text {
+    color: #ea005f;
+    font-style: italic;
 }
