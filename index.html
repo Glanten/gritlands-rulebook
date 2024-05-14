@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-  <head>
-    <title>Gritlands Rulebook</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
-    <link rel="stylesheet" href="static\default_style.css" />
-    <!--
-  <link rel="manifest" href="manifest.json" />
-  --></head>
 
-  <body>
-    <!-- Register the WPA service worker
+<head>
+  <title>Gritlands Rulebook</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+  <link rel="stylesheet" href="static\default_style.css" />
+  <!--
+  <link rel="manifest" href="manifest.json" />
+  -->
+</head>
+
+<body>
+  <!-- Register the WPA service worker
   <script>
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("sw.js");
@@ -19,321 +21,193 @@
   </script>
    -->
 
-    <nav>
-      <div id="sidenavmenu" class="sidenav">
-        <a href="javascript:void(0)" class="closebutton" onclick="closeNav()"
-          ><img src="static/images/close_white_24dp.svg" alt="close menu" width="20" height="20"
-        /></a>
-        <!-- NAVBAR -->
-        <a href="#" class="contentlink" data-url="static/pagecontent/home.html" id="homepage" data-title="Introduction">
-          Introduction
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/characters.html"
-          id="characters"
-          data-title="Characters"
-        >
-          Characters
-        </a>
-        <a href="#" class="contentlink" data-url="static/pagecontent/clans.html" id="clans" data-title="Clans">
-          Clans
-        </a>
+  <nav>
+    <div id="sidenavmenu" class="sidenav">
+      <a href="javascript:void(0)" class="closebutton" onclick="closeNav()"><img
+          src="static/images/close_white_24dp.svg" alt="close menu" width="20" height="20" /></a>
+      <!-- NAVBAR -->
+      <a href="#" class="contentlink" data-url="static/pagecontent/home.html" id="homepage" data-title="Introduction">
+        Introduction
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/characters.html" id="characters"
+        data-title="Characters">
+        Characters
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/clans.html" id="clans" data-title="Clans">
+        Clans
+      </a>
 
-        <!-- CHARACTER ARCHETYPES -->
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/archetypes.html"
-          id="archetypes"
-          data-title="Archetypes"
-        >
-          Archetypes
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/enabler.html"
-          id="enabler_link"
-          data-title="Enabler"
-        >
-          Enabler
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/engineer.html"
-          id="engineer_link"
-          data-title="Engineer"
-        >
-          Engineer
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/oddball.html"
-          id="oddball_link"
-          data-title="Oddball"
-        >
-          Oddball
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/scientist.html"
-          id="scientist_link"
-          data-title="Scientist"
-        >
-          Scientist
-        </a>
-        <a href="#" class="contentlink" data-url="static/pagecontent/scout.html" id="scout_link" data-title="Scout">
-          Scout
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/warrior.html"
-          id="warrior_link"
-          data-title="Warrior"
-        >
-          Warrior
-        </a>
-        <!-- END OF CHARACTER ARCHETYPES -->
+      <!-- CHARACTER ARCHETYPES -->
+      <a href="#" class="contentlink" data-url="static/pagecontent/archetypes.html" id="archetypes"
+        data-title="Archetypes">
+        Archetypes
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/enabler.html" id="enabler_link" data-title="Enabler">
+        Enabler
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/engineer.html" id="engineer_link"
+        data-title="Engineer">
+        Engineer
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/oddball.html" id="oddball_link" data-title="Oddball">
+        Oddball
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/scientist.html" id="scientist_link"
+        data-title="Scientist">
+        Scientist
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/scout.html" id="scout_link" data-title="Scout">
+        Scout
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/warrior.html" id="warrior_link" data-title="Warrior">
+        Warrior
+      </a>
+      <!-- END OF CHARACTER ARCHETYPES -->
 
-        <a href="#" class="contentlink" data-url="static/pagecontent/grit.html" id="grit" data-title="GRIT"> GRIT </a>
-        <a href="#" class="contentlink" data-url="static/pagecontent/health.html" id="health" data-title="Health">
-          Health
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/consequences.html"
-          id="consequences"
-          data-title="Consequences"
-        >
-          Consequences
-        </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/grit.html" id="grit" data-title="GRIT"> GRIT </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/health.html" id="health" data-title="Health">
+        Health
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/consequences.html" id="consequences"
+        data-title="Consequences">
+        Consequences
+      </a>
 
-        <!-- SKILLS -->
-        <a href="#" class="contentlink" data-url="static/pagecontent/skills.html" id="skills" data-title="Skills">
-          Skills
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/tradition.html"
-          id="tradition"
-          data-title="Tradition"
-        >
-          Tradition
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/scout_skill.html"
-          id="scout_skill"
-          data-title="Scout Skill"
-        >
-          Scout Skill
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/carnage_skill.html"
-          id="carnage_skill"
-          data-title="Carnage"
-        >
-          Carnage
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/pharmacology_skill.html"
-          id="pharmacology_skill"
-          data-title="Pharmacology"
-        >
-          Pharmacology
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/medic_skill.html"
-          id="medic_skill"
-          data-title="Medic"
-        >
-          Medic
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/engineer_skill.html"
-          id="engineer_skill"
-          data-title="Engineer Skill"
-        >
-          Engineer Skill
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/and_chewing_gum.html"
-          id="and_chewing_gum"
-          data-title="...& Chewing Gum"
-        >
-          ...& Chewing Gum
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/assistant.html"
-          id="assistant"
-          data-title="Assistant"
-        >
-          Assistant
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/coordinator.html"
-          id="coordinator"
-          data-title="Coordinator"
-        >
-          Coordinator
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/counselling.html"
-          id="counselling"
-          data-title="Counselling"
-        >
-          Counselling
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/d-fens.html"
-          id="d-fens"
-          data-title="D-Fens"
-        >
-          D-Fens
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/first_aid.html"
-          id="first_aid"
-          data-title="First Aid"
-        >
-          First Aid
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/never_say_die.html"
-          id="never_say_die"
-          data-title="Never Say Die"
-        >
-          Never Say Die
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/psychoanalysis.html"
-          id="psychoanalysis"
-          data-title="Psychoanalysis"
-        >
-          Psychoanalysis
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/reputation.html"
-          id="reputation"
-          data-title="Reputation"
-        >
-          Reputation
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/resistance.html"
-          id="resistance"
-          data-title="Resistance"
-        >
-          Resistance
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/skills/second_wind.html"
-          id="second_wind"
-          data-title="Second Wind"
-        >
-          Second Wind
-        </a>
-        <!-- END OF SKILLS -->
+      <!-- SKILLS -->
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills.html" id="skills" data-title="Skills">
+        Skills
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/tradition.html" id="tradition"
+        data-title="Tradition">
+        Tradition
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/scout_skill.html" id="scout_skill"
+        data-title="Scout Skill">
+        Scout Skill
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/carnage_skill.html" id="carnage_skill"
+        data-title="Carnage">
+        Carnage
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/pharmacology_skill.html"
+        id="pharmacology_skill" data-title="Pharmacology">
+        Pharmacology
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/medic_skill.html" id="medic_skill"
+        data-title="Medic">
+        Medic
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/engineer_skill.html" id="engineer_skill"
+        data-title="Engineer Skill">
+        Engineer Skill
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/and_chewing_gum.html" id="and_chewing_gum"
+        data-title="...& Chewing Gum">
+        ...& Chewing Gum
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/assistant.html" id="assistant"
+        data-title="Assistant">
+        Assistant
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/coordinator.html" id="coordinator"
+        data-title="Coordinator">
+        Coordinator
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/counselling.html" id="counselling"
+        data-title="Counselling">
+        Counselling
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/d-fens.html" id="d-fens" data-title="D-Fens">
+        D-Fens
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/first_aid.html" id="first_aid"
+        data-title="First Aid">
+        First Aid
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/never_say_die.html" id="never_say_die"
+        data-title="Never Say Die">
+        Never Say Die
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/psychoanalysis.html" id="psychoanalysis"
+        data-title="Psychoanalysis">
+        Psychoanalysis
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/reputation.html" id="reputation"
+        data-title="Reputation">
+        Reputation
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/resistance.html" id="resistance"
+        data-title="Resistance">
+        Resistance
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/second_wind.html" id="second_wind"
+        data-title="Second Wind">
+        Second Wind
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/teamwork.html" id="teamwork"
+        data-title="Teamwork">
+        Teamwork
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/thicker_than_water.html"
+        id="thicker_than_water" data-title="Thicker than Water">
+        Thicker than Water
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/skills/true_grit.html" id="true_grit"
+        data-title="True Grit">
+        True Grit
+      </a>
+      <!-- END OF SKILLS -->
 
-        <a href="#" class="contentlink" data-url="static/pagecontent/armour.html" id="armour" data-title="Armour">
-          Armour
-        </a>
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/equipment.html"
-          id="equipment"
-          data-title="Equipment"
-        >
-          Equipment
-        </a>
-        <a href="#" class="contentlink" data-url="static/pagecontent/tasks.html" id="tasks" data-title="Tasks">
-          Tasks
-        </a>
-        <a href="#" class="contentlink" data-url="static/pagecontent/tags.html" id="tags" data-title="Tags"> Tags </a>
-        <a href="#" class="contentlink" data-url="static/pagecontent/hotzones.html" id="hotzones" data-title="HOTZONES">
-          HOTZONES
-        </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/armour.html" id="armour" data-title="Armour">
+        Armour
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/equipment.html" id="equipment"
+        data-title="Equipment">
+        Equipment
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/tasks.html" id="tasks" data-title="Tasks">
+        Tasks
+      </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/tags.html" id="tags" data-title="Tags"> Tags </a>
+      <a href="#" class="contentlink" data-url="static/pagecontent/hotzones.html" id="hotzones" data-title="HOTZONES">
+        HOTZONES
+      </a>
 
-        <!-- MERGE THIS WITH "CHARACTERS" -->
-        <a href="#" class="contentlink" data-url="static/pagecontent/chargen.html" id="chargen" data-title="Character">
-          Character Creation
-        </a>
+      <!-- MERGE THIS WITH "CHARACTERS" -->
+      <a href="#" class="contentlink" data-url="static/pagecontent/chargen.html" id="chargen" data-title="Character">
+        Character Creation
+      </a>
 
-        <a
-          href="#"
-          class="contentlink"
-          data-url="static/pagecontent/disclaimers.html"
-          id="disclaimers"
-          data-title="Disclaimers"
-        >
-          Disclaimers
-        </a>
-      </div>
-    </nav>
+      <a href="#" class="contentlink" data-url="static/pagecontent/disclaimers.html" id="disclaimers"
+        data-title="Disclaimers">
+        Disclaimers
+      </a>
+    </div>
+  </nav>
 
-    <header>
-      <div id="topnavbar">
-        <a onclick="openNav()" id="menudots"
-          ><img src="static/images/menu_white_24dp.svg" alt="menu" width="20" height="20"
-        /></a>
-        <span id="pagetitle">GRITLANDS</span>
-        <span id="pagesubtitle"></span>
-        <div id="appsettings">
-          <a href="#"><img src="static/images/settings_white_24dp.svg" alt="settings" width="20" height="20" /></a>
-        </div>
-      </div>
-    </header>
-
-    <div id="maincontent">
-      <h1>Heading 1</h1>
-
-      <div>
-        <p>Text goes here</p>
+  <header>
+    <div id="topnavbar">
+      <a onclick="openNav()" id="menudots"><img src="static/images/menu_white_24dp.svg" alt="menu" width="20"
+          height="20" /></a>
+      <span id="pagetitle">GRITLANDS</span>
+      <span id="pagesubtitle"></span>
+      <div id="appsettings">
+        <a href="#"><img src="static/images/settings_white_24dp.svg" alt="settings" width="20" height="20" /></a>
       </div>
     </div>
+  </header>
 
-    <div class="hide">
-      <script src="static/layout.js"></script>
+  <div id="maincontent">
+    <h1>Heading 1</h1>
+
+    <div>
+      <p>Text goes here</p>
     </div>
-  </body>
+  </div>
+
+  <div class="hide">
+    <script src="static/layout.js"></script>
+  </div>
+</body>
+
 </html>
