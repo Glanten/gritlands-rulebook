@@ -1,191 +1,225 @@
 /* default stylesheet for rulebook */
 
 html {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 #maincontent {
-    padding-top: 30px;
-    padding-left: 10px;
+  padding-top: 30px;
+  padding-left: 10px;
 }
 
 /* hidden elements (for compatibility with certain/older browsers */
-.hide { display: none; visibility: hidden; }
+.hide {
+  display: none;
+  visibility: hidden;
+}
 
 /* SIDE NAVIGATION MENU */
 /* sidenav menu */
 .sidenav {
-    height: calc(100% - 60px); /* ensure the navbar does not keep going off the bottom of the screen! */
-    width: 0; /* this opens with the JavaScript openNav() function */
-    position: fixed; /* stays in place */
-    z-index: 1; /* lies above other layers */
-    top: 0; /* stay at the top of the page */
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden; /* disable horizontal scroll */
-    scrollbar-width: thin;
-    scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
-    padding-top: 60px; /* place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  height: calc(100% - 60px); /* ensure the navbar does not keep going off the bottom of the screen! */
+  width: 0; /* this opens with the JavaScript openNav() function */
+  position: fixed; /* stays in place */
+  z-index: 1; /* lies above other layers */
+  top: 0; /* stay at the top of the page */
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden; /* disable horizontal scroll */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+  padding-top: 60px; /* place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
 /* change navigation links color on mouse-over (web only) */
 .sidenav a:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
-  
+
 /* position and style the sidenav menu close button (top right corner) */
 .sidenav .closebutton {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /* +++ TOP NAVIGATION BAR +++ */
 #topnavbar {
-    background-color: #111;
-    position: fixed; /* stuck in position */
-    top: 0; /* stuck to top of page */
-    left: 0;
-    width: 100%;
-    transition: top 0.3s; /* time to appear/disappear */
+  background-color: #111;
+  position: fixed; /* stuck in position */
+  top: 0; /* stuck to top of page */
+  left: 0;
+  width: 100%;
+  transition: top 0.3s; /* time to appear/disappear */
 }
 
-#topnavbar a, #topnavbar span{
-    float: left;
-    display: flex;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
+#topnavbar a,
+#topnavbar span {
+  float: left;
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
 }
 
 #topnavbar a:hover {
-    background-color: #ddd;
-    color: black;
-    cursor: pointer;
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
 }
 
 #appsettings {
-    float: right;
+  float: right;
 }
 
 #pagetitle {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #pagesubtitle {
-    color: lightgray;
+  color: lightgray;
 }
 
-table, th, td {
-    font-size: smaller;
-    border: 1px solid black;
-    border-collapse: collapse;
+table,
+th,
+td {
+  font-size: smaller;
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
 .full_width {
-    width: 100%;
+  width: 100%;
 }
 
 th {
-    text-align: left;
-    background-color: black;
-    color: white;
+  text-align: left;
+  background-color: black;
+  color: white;
 }
 
 .consequence_track {
-    font-size: large;
-    text-align: center;
-    width: 100%;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+  font-size: large;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .no_border {
-    border: none;
-    border-left: 1px solid black;
+  border: none;
+  border-left: 1px solid black;
 }
 
-#enabler_link, #engineer_link, #oddball_link, #scientist_link, #scout_link, #warrior_link,
-#tradition, #scout_skill, #carnage_skill, #pharmacology_skill, #medic_skill, #engineer_skill,
-#and_chewing_gum, #assistant, #coordinator, #counselling, #d-fens, #first_aid, #never_say_die,
-#psychoanalysis, #reputation, #resistance, #second_wind, #teamwork, #thicker_than_water, #true_grit {
-    text-indent: 1em;
+#enabler_link,
+#engineer_link,
+#oddball_link,
+#scientist_link,
+#scout_link,
+#warrior_link,
+#tradition,
+#scout_skill,
+#carnage_skill,
+#pharmacology_skill,
+#medic_skill,
+#engineer_skill,
+#and_chewing_gum,
+#assistant,
+#coordinator,
+#counselling,
+#d-fens,
+#first_aid,
+#never_say_die,
+#psychoanalysis,
+#reputation,
+#resistance,
+#second_wind,
+#teamwork,
+#thicker_than_water,
+#true_grit {
+  text-indent: 1em;
 }
 
-.archetype_toggle a, .collapsible {
-    display: block;
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.archetype_toggle a,
+.collapsible {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.chargen_content, .tradition_content, .design_notes {
-    display: none;
+.chargen_content,
+.tradition_content,
+.design_notes {
+  display: none;
 }
 
 .class_skills {
-    width: 100%;
+  width: 100%;
 }
 
 .class_skills td {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 .archetype_span {
-    text-align: center;
+  text-align: center;
 }
 
-.clan_archetype_button
-{
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    border: 5px solid transparent;
+.clan_archetype_button {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border: 5px solid transparent;
 }
 
 .float_right {
-    float: right;
+  float: right;
 }
 
 .clans_display {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .clans_display img {
-    margin:10px;
+  margin: 10px;
 }
 
 .clans_display span {
-    font-size: larger;
+  font-size: larger;
 }
 
 .pink_text {
-    color: #ea005f;
-    font-style: italic;
+  color: #ea005f;
+  font-style: italic;
 }
