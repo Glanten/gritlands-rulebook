@@ -25,6 +25,7 @@ function collapseSegment(segmentId, iconId) {
   }
 }
 
+// clan-specific archetype buttons
 function archetypeSegment(segment, url, buttonId) {
   buttonOutline(buttonId);
   var whichButton = document.getElementById(buttonId);
@@ -64,6 +65,7 @@ function archetypeSegment(segment, url, buttonId) {
   }
 }
 
+// outline clan-specific buttons
 function buttonOutline(buttonId) {
   var button = document.getElementById(buttonId);
   var buttons = document.getElementsByClassName("clan_archetype_button");
