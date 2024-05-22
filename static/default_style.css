@@ -223,3 +223,14 @@ th {
   color: #ea005f;
   font-style: italic;
 }
+
+.logo_tiny {
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+  margin: 2px;
+}
+
+.vertical_mid {
+  vertical-align: middle;
+}
