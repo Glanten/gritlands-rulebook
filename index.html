@@ -7,19 +7,26 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
   <link rel="stylesheet" href="static\default_style.css" />
-  <!--
   <link rel="manifest" href="manifest.json" />
-  -->
+  <meta name="theme-color" content="black">
 </head>
 
 <body>
-  <!-- Register the WPA service worker
+  <!-- Register the PWA service worker -->
   <script>
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js");
+      navigator.serviceWorker.register("sw.js").then(
+        (registration) => {
+          console.log("Service worker registration successful:", registration);
+        },
+        (error) => {
+          console.error(`Service worker registration failed: ${error}`);
+        },
+      );
+    } else {
+      console.error("Service workers are not supported.");
     }
   </script>
-   -->
 
   <nav>
     <div id="sidenavmenu" class="sidenav">
