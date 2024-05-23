@@ -128,3 +128,19 @@ self.addEventListener("activate", (event) => {
     })()
   );
 });
+
+// Fetch resources
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    (async () => {
+      const cache = await caches.open(CACHE_NAME);
+      const cachedResponse = await cache.match(event.request);
+      if (cachedResponse) {
+        return cachedResponse;
+      }
+      const networkResponse = await fetch(event.request);
+      await cache.put(event.request, networkResponse.clone());
+      return networkResponse;
+    })()
+  );
+});
