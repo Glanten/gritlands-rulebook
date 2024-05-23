@@ -143,6 +143,10 @@ th {
 #scientist_link,
 #scout_link,
 #warrior_link,
+#clan_nugov,
+#clan_wastelanders,
+#clan_knights,
+#clan_host,
 #tradition,
 #scout_skill,
 #carnage_skill,
@@ -233,4 +237,11 @@ th {
 
 .vertical_mid {
   vertical-align: middle;
+}
+
+.logo_medium {
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
