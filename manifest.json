@@ -1,7 +1,7 @@
 {
     "name": "Gritlands Rulebook",
     "short_name": "Gritlands",
-    "start_url": "index.html",
+    "start_url": ".",
     "display": "standalone",
     "icons": [
         {
