@@ -2,7 +2,6 @@
 const VERSION = "20240523";
 const CACHE_NAME = `gritlands-rulebook-${VERSION}`;
 const APP_STATIC_RESOURCES = [
-  "/",
   "/index.html",
   "/README.md",
   "/manifest.json",
@@ -100,6 +99,7 @@ const APP_STATIC_RESOURCES = [
   "/static/pagecontent/skills/thicker_than_water.html",
   "/static/pagecontent/skills/tradition.html",
   "/static/pagecontent/skills/true_grit.html",
+  "/",
 ];
 
 // install PWA
