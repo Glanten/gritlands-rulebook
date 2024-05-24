@@ -6,39 +6,39 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "/static/images/gritlands-big-splash.png",
+            "src": "static/images/gritlands-big-splash.png",
             "sizes": "1024x1024",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "/static/images/gritlands-logo.svg",
+            "src": "static/images/gritlands-logo.svg",
             "sizes": "any",
             "type": "image/svg+xml"
         },
         {
-            "src": "/static/images/gritlands-logo-512.png",
+            "src": "static/images/gritlands-logo-512.png",
             "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "/static/images/gritlands-logo-512.png",
+            "src": "static/images/gritlands-logo-512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "/static/images/gritlands-logo-384.png",
+            "src": "static/images/gritlands-logo-384.png",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "/static/images/gritlands-logo-256.png",
+            "src": "static/images/gritlands-logo-256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "/static/images/gritlands-logo-192.png",
+            "src": "static/images/gritlands-logo-192.png",
             "sizes": "192x192",
             "type": "image/png"
         }
