@@ -103,45 +103,52 @@ const APP_STATIC_RESOURCES = [
   "/",
 ];
 
-// install PWA
+// install cache (PWA behaviour)
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    (async () => {
-      const cache = await caches.open(CACHE_NAME);
-      cache.addAll(APP_STATIC_RESOURCES);
-    })()
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(APP_STATIC_RESOURCES);
+    })
   );
 });
 
-// remove old content once new content has been updated
+// clean up old caches
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    (async () => {
-      const names = await caches.keys();
-      await Promise.all(
-        names.map((name) => {
-          if (name !== CACHE_NAME) {
-            return caches.delete(name);
-          }
-        })
-      );
-      await clients.claim();
-    })()
+    caches
+      .keys()
+      .then((names) => {
+        return Promise.all(
+          names.map((name) => {
+            if (name !== CACHE_NAME) {
+              return caches.delete(name);
+            }
+          })
+        );
+      })
+      .then(() => self.clients.claim())
   );
 });
 
-// fetch resources on demand
+// fetch cached resources (or fetch them from server and cache them)
 self.addEventListener("fetch", (event) => {
   event.respondWith(
-    (async () => {
-      const cache = await caches.open(CACHE_NAME);
-      const cachedResponse = await cache.match(event.request);
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      const networkResponse = await fetch(event.request);
-      await cache.put(event.request, networkResponse.clone());
-      return networkResponse;
-    })()
+    caches
+      .match(event.request)
+      .then((response) => {
+        return (
+          response ||
+          fetch(event.request).then((networkResponse) => {
+            return caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, networkResponse.clone());
+              return networkResponse;
+            });
+          })
+        );
+      })
+      .catch(() => {
+        // fallback for offline mode
+        return caches.match("/static/pagecontent/404.html");
+      })
   );
 });
