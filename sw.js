@@ -1,10 +1,11 @@
 // rulebook app service worker
-const VERSION = "20240523";
+const VERSION = "20240524";
 const CACHE_NAME = `gritlands-rulebook-${VERSION}`;
 const APP_STATIC_RESOURCES = [
   "/index.html",
   "/README.md",
   "/manifest.json",
+  "/app.js",
   "/static/default_style.css",
   "/static/layout.js",
   "/static/images/close_black_24dp.svg",
@@ -99,7 +100,7 @@ const APP_STATIC_RESOURCES = [
   "/static/pagecontent/skills/thicker_than_water.html",
   "/static/pagecontent/skills/tradition.html",
   "/static/pagecontent/skills/true_grit.html",
-  "/",
+  //  "/",
 ];
 
 // install PWA
@@ -129,7 +130,7 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// Fetch resources
+// fetch resources on demand
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     (async () => {
