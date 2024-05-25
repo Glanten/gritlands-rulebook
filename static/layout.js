@@ -1,3 +1,12 @@
+/*
+  I had some help with this JavaScript:
+
+  Sidenav menu and collapsing segments - W3 Schools
+  Error checking and pseudo-history - ChatGPT
+
+  The rest was from my cs50 notes
+*/
+
 // open the sidenav menu (to 250px)
 function openNav() {
   document.getElementById("sidenavmenu").style.width = "250px";
@@ -97,7 +106,7 @@ function buttonOutline(buttonId) {
 }
 
 /* when the user scrolls down, hide the navbar; when the user scrolls up, show the navbar */
-var prevScrollpos = window.scrollY; // was window.pageYOffset but that is deprecated
+var prevScrollpos = window.scrollY; // was window.pageYOffset but that is now deprecated
 window.onscroll = function () {
   var currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {

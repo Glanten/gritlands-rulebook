@@ -1,3 +1,14 @@
+/*
+  The original service worker code was from the Mozilla Foundation...
+  ...but it didn't actually cache any pages! The application worked,
+  but the offline functionality was massively hampered and would only
+  display content that had been cached the traditional way.
+   I spent hours trying to find out why, watching PWA tutorials on
+   YouTube, and in the end I asked ChatGPT if it could spot the mistake
+   - the Mozilla code just flat out wouldn't work, but ChatGPT's version
+   did. Surprising, and very annoying!
+*/
+
 // rulebook app service worker
 const VERSION = "20240524";
 const CACHE_NAME = `gritlands-rulebook-${VERSION}`;
