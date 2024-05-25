@@ -3,8 +3,10 @@ function openNav() {
   document.getElementById("sidenavmenu").style.width = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   document.body.style.overflow = "hidden";
-  // preparing for "back button" functionality
+  /*
+  // trying to implement "back button" functionality but it doesn't seem to work
   history.pushState({ menuOpen: true }, "Menu", "#menu");
+  */
 }
 
 // close the sidenav menu
@@ -14,12 +16,14 @@ function closeNav() {
   document.body.style.overflow = "auto";
 }
 
+/*
 // use "back button" to close menu
 window.addEventListener("popstate", (event) => {
   if (event.state && event.state.menuOpen) {
     closeNav();
   }
 });
+*/
 
 // open or close a named section (it should start closed)
 function collapseSegment(segmentId, iconId) {
