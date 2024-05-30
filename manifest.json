@@ -46,5 +46,28 @@
     "theme_color": "black",
     "background_color": "#1a1a1e",
     "lang": "en",
-    "description": "A web- and smartphone-friendly rulebook for the Gritlands LARP"
+    "description": "A web and smartphone-friendly rulebook for Gritlands, a grimly hilarious post-apocalyptic LARP.",
+    "screenshots": [
+        {
+            "src": "static/images/screenshots/mobile-intro.png",
+            "sizes": "1080x2280",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Intro page"
+        },
+        {
+            "src": "static/images/screenshots/mobile-grit.png",
+            "sizes": "1080x2280",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "GRIT rules page"
+        },
+        {
+            "src": "static/images/screenshots/mobile-clans.png",
+            "sizes": "1080x2280",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Clan information page"
+        }
+    ]
 }
