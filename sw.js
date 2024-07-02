@@ -50,6 +50,7 @@ const APP_STATIC_RESOURCES = [
   "static/pagecontent/enabler.html",
   "static/pagecontent/engineer.html",
   "static/pagecontent/equipment.html",
+  "static/pagecontent/firearms.html",
   "static/pagecontent/grit.html",
   "static/pagecontent/health.html",
   "static/pagecontent/home.html",
