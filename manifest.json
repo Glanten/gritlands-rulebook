@@ -63,7 +63,7 @@
             "label": "GRIT rules page"
         },
         {
-            "src": "static/images/screenshots/mobile-clans.png",
+            "src": "static/images/screenshots/mobile-clan.png",
             "sizes": "1080x2280",
             "type": "image/png",
             "form_factor": "narrow",

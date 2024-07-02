@@ -10,7 +10,7 @@
 */
 
 // rulebook app service worker
-const VERSION = "20240606";
+const VERSION = "20240702";
 const CACHE_NAME = `gritlands-rulebook-${VERSION}`;
 const APP_STATIC_RESOURCES = [
   "index.html",
